@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+<!-- Interruptor oculto para la barra lateral -->
+<input type="checkbox" id="togglePerfil" class="toggle-input">
+
 <header class="navbar">
     <div class="log">
       <a href="../home/menu.html"><span class="logo-mi">Tiendamia</span><span class="logo-ecommerce">.com.ar</span></a>
@@ -20,11 +25,30 @@
         <a href="../car/car.html"><img src="https://cdn-icons-png.flaticon.com/512/34/34568.png" alt="Carrito"></a>
       </div>
       <div class="user">
-        <a href="../login/login.html"><i class="bi bi-person-circle"></i></a>
-        <a href="../login/login.html"><span>Perfil</span></a>
+        <label for="togglePerfil" class="perfil-btn"><i class="fas fa-user-circle"></i> Perfil</label>
       </div>
     </div>
 </header>
+
+<!-- Barra lateral -->
+<div class="sidebar">
+  <div class="perfil-info">
+    <i class="fas fa-user-circle"></i>
+    <span>Mi Perfil</span>
+  </div>
+  <hr>
+  <ul class="menu-perfil">
+    <li><a href="../home/menu.html">Inicio</a></li>
+    <li><a href="../car/car.html">Mis Compras</a></li>
+    <li><a href="#">Favoritos</a></li>
+    <li><a href="../login/login.html">Cerrar Sesion</a></li>
+  </ul>
+  <hr>
+  <div class="tema">
+    <a href="#">Cambiar a Tema Oscuro</a>
+  </div>
+</div>
+
 <main>
   <div class="container">
     <div class="pagar">
